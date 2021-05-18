@@ -11,7 +11,7 @@ class Translation(object):
 
 
 🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉
-   @Rfxjoker
+   https://t.me/Rfxjoker
 </i>"""    
     
     HELP_TEXT = """
