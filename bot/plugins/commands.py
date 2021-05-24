@@ -26,9 +26,9 @@ async def start(bot, update):
 \
 നിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം...  \
 \
-Join ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.:grin:\n<b>ꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ\n\n<a href='https://t.me/movieuploaders'>©MOVIEUPLOADERS</a></b>",
+Join ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.\n<b>ꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ\n\n<a href='https://t.me/movieuploaders'>©MOVIEUPLOADERS</a></b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" :beginner:JOIN OUR CHANNEL:beginner: ", url=f"https://t.me/joinchat/Rj8lxYv8Cro1ODc1")]
+                    [ InlineKeyboardButton(text="JOIN OUR CHANNEL", url=f"https://t.me/joinchat/Rj8lxYv8Cro1ODc1")]
               ])
             )
             return
