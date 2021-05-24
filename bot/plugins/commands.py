@@ -13,6 +13,7 @@ db = Database()
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
   
+  
   update_channel = "@movieuploader1"
     if update_channel:
         try:
