@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/movieuploaders"
+                                    'Owner✅️', url="https://t.me/movieuploaders"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/movieuploaders"
+                                    'Owner✅️', url="https://t.me/movieuploaders"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/movieuploaders"
+                                    'Owner✅️', url="https://t.me/movieuploaders"
                                 )
                         ]
                     ]
@@ -89,10 +89,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/Rfxjoker'),
-        InlineKeyboardButton('Group 🧾', url ='https://t.me/movieuploaders')
+        InlineKeyboardButton('Owner✅️', url='https://t.me/Rfxjoker'),
+        InlineKeyboardButton('Group✅️', url ='https://t.me/movieuploaders')
     ],[
-        InlineKeyboardButton('Channel 🛠', url='https://t.me/Movieuploader153')
+        InlineKeyboardButton('Channel✅️', url='https://t.me/joinchat/Rj8lxYv8Cro1ODc1')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
