@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Owner✅️', url="https://t.me/movieuploaders"
+                                    'Channel✅️', url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Owner✅️', url="https://t.me/movieuploaders"
+                                    'Channel✅️', url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Owner✅️', url="https://t.me/movieuploaders"
+                                    'Channel✅️', url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1"
                                 )
                         ]
                     ]
