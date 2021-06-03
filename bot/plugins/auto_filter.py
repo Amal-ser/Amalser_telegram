@@ -60,6 +60,11 @@ async def auto_filter(bot, update):
     filters = await db.get_filters(group_id, query)
     
     if filters:
+        results.append(
+                [
+                    InlineKeyboardButton("⚠️JOIN OUR MAIN CHANNEL⚠️", url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1")
+                ]
+            )
         for filter in filters: # iterating through each files
             file_name = filter.get("file_name")
             file_type = filter.get("file_type")
@@ -126,7 +131,13 @@ async def auto_filter(bot, update):
             )
         
     else:
-        return # return if no files found for that query
+        Send_message = await bot.send_message(
+            chat_id=update.chat.id,
+            text="<b>Couldn't Find This Movie.Try Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>",
+            reply_to_message_id=update.message_id
+        )
+        await asyncio.sleep(5)
+        await Send_message.delete()
     
 
     if len(results) == 0: # double check
@@ -156,7 +167,7 @@ async def auto_filter(bot, update):
             InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
         ])
         
-        
+        result[0].append([ InlineKeyboardButton(f"⚠️JOIN OUR SECOND CHANNEL⚠️", url="https://t.me/joinchat/o2TAYsK2nc42MjQ1") ])       
         # if show_invite is True Append invite link buttons
         if show_invite:
             
@@ -285,4 +296,3 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             
             ACTIVE_CHATS[str(group_id)] = achatId
     return 
-
