@@ -1601,14 +1601,14 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/movieuploaders">@movieuploaders</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://t.me/joinchat/Rj8lxYv8Cro1ODc1">Source</a>"""
+    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/CrazyBotszGrp">@CrazyBotszGrp</a>\n"""
+    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/AlbertEinsteinTG/Adv-Filter-Bot-V2">Source</a>"""
 
     buttons = [
         [
             InlineKeyboardButton
                 (
-                    "Owner ✅", url="https://t.me/Rfxjoker"
+                    "My Dev ⚡", url="https://t.me/AlbertEinstein_TG"
                 ),
                 
             InlineKeyboardButton
@@ -1639,11 +1639,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('Owner ✅', url='https://t.me/Rfxjoker'),
-            InlineKeyboardButton('Channel ✅', url ='https://t.me/joinchat/Rj8lxYv8Cro1ODc1')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
+            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot')
         ],[
-            InlineKeyboardButton('Group ✅', url='https://t.me/movieuploaders')
-        ],[
+            InlineKeyboardButton('Support 🛠', callback_data="help"),
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
     
@@ -1707,4 +1706,3 @@ def time_formatter(seconds: float) -> str:
         ((str(minutes) + "m, ") if minutes else "") + \
         ((str(seconds) + "s") if seconds else "")
     return tmp
-
