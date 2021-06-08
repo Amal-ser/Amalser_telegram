@@ -212,7 +212,7 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-             await bot.send_message(
+            await bot.send_message(
                 chat_id = update.chat.id,
                 text=f"""<i><b> ʜᴇʀᴇ ɪꜱ ᴛʜᴇ {(len_results)} ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy:</i></b> <b>{query}</b>\n\n 👉 <b>ഈ ചാനലിൽ</b> <b><i><a href="https://t.me/joinchat/fRx1KhIuZulhZWE9">⚔️ 🅼🅾🆅🅸🅴🆄🅿🅻🅾🅰🅳🅴🆁🆂 ⚔️</a></i></b> <b>ജോയിൻ ചെയ്ത ശേഷം ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</b>""",
                 reply_markup=reply_markup,
