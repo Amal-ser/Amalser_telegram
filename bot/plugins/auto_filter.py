@@ -214,7 +214,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"""<i>Found {(len_results)} Results For Your Query:</i> <b>{query}</b>\n\n 👉 <b><i><a href="https://t.me/movieuploader1">꧁𓊈𒆜🅼🅾🆅🅸🅴🆄🅿🅻🅾🅰🅳🅴🆁🆂𒆜𓊉꧂</a></i></b>""",
+                text=f"""<i>Found {(len_results)} Results For Your Query:</i> <b>{query}</b>\n\n 👉 ഈ ചാനലിൽ <b><i><a href="https://t.me/joinchat/fRx1KhIuZulhZWE9">꧁𓊈𒆜🅼🅾🆅🅸🅴🆄🅿🅻🅾🅰🅳🅴🆁🆂𒆜𓊉꧂</a></i></b> ജോയിൻ ചെയ്ത ശേഷം ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.""",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
