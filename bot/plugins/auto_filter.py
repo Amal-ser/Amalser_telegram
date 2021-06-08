@@ -60,11 +60,6 @@ async def auto_filter(bot, update):
     filters = await db.get_filters(group_id, query)
     
     if filters:
-        results.append(
-                [
-                    InlineKeyboardButton("⚠️JOIN OUR MAIN CHANNEL⚠️", url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1")
-                ]
-            )
         for filter in filters: # iterating through each files
             file_name = filter.get("file_name")
             file_type = filter.get("file_type")
@@ -130,18 +125,21 @@ async def auto_filter(bot, update):
                 ]
             )
         
-    else:
-        Send_message = await bot.send_message(
-            chat_id=update.chat.id,
-            text="<b>Couldn't Find This Movie.Try Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>",
-            reply_to_message_id=update.message_id
+    else: 
+         Send_message = await bot.send_message(
+         chat_id=update.chat.id,
+         text="<b>Couldn't Find This Movie☹️ Try Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❕CHANNEL❕", url="https://t.me/joinchat/fRx1KhIuZulhZWE9")]]),
+         parse_mode="html",
+         disable_web_page_preview=True,
+         reply_to_message_id=update.message_id
         )
-        await asyncio.sleep(5)
-        await Send_message.delete()
+         await asyncio.sleep(10)
+         await Send_message.delete()
     
 
     if len(results) == 0: # double check
-        return
+        return   #module by shamilhabeebnelli
     
     else:
     
@@ -164,10 +162,10 @@ async def auto_filter(bot, update):
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"🔘 Pᴀɢᴇ  1/{len_result if len_result < max_pages else max_pages} 🔘", callback_data="ignore")
         ])
         
-        result[0].append([ InlineKeyboardButton(f"🔎HOW TO SEARCH MOVIES🔍", url="https://t.me/movieuploader1/79") ])       
+        
         # if show_invite is True Append invite link buttons
         if show_invite:
             
@@ -214,7 +212,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"""<i><b> ʜᴇʀᴇ ɪꜱ ᴛʜᴇ {(len_results)} ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy:</i></b> <b>{query}</b>\n\n 👉 <b>ഈ ചാനലിൽ</b> <b><i><a href="https://t.me/joinchat/fRx1KhIuZulhZWE9">⚔️ 🅼🅾🆅🅸🅴🆄🅿🅻🅾🅰🅳🅴🆁🆂 ⚔️</a></i></b> <b>ജോയിൻ ചെയ്ത ശേഷം ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</b>""",
+                text=f"Found {(len_results)} Results For Your Query: <code>{query}</code>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
@@ -296,3 +294,4 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             
             ACTIVE_CHATS[str(group_id)] = achatId
     return 
+© 2021 GitHub, Inc.
