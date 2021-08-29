@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update): 
-    update_channel = "@movieuploaders1"
+    update_channel = "@newmovies153"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🤭 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭നിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം...Join ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ....😁😁</b>\n<b>ꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ\n\n<a href='https://t.me/joinchat/fRx1KhIuZulhZWE9'>©MOVIEUPLOADERS</a></b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/movieuploaders1")]
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/newmovies153")]
               ])
             )
             return
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Channel✅️', url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1"
+                                    'Channel✅️', url="https://t.me/newmovies153"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Channel✅️', url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1"
+                                    'Channel✅️', url="https://t.me/mainmovieuploaders"
                                 )
                         ]
                     ]
@@ -95,7 +95,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Channel✅️', url="https://t.me/joinchat/Rj8lxYv8Cro1ODc1"
+                                    'Channel✅️', url="https://t.me/mainmovieuploaders"
                                 )
                         ]
                     ]
@@ -109,9 +109,9 @@ async def start(bot, update):
 
     buttons = [[
         InlineKeyboardButton('Owner✅️', url='https://t.me/Rfxjoker'),
-        InlineKeyboardButton('Group✅️', url ='https://t.me/movieuploaders')
+        InlineKeyboardButton('Group✅️', url ='https://t.me/Movieuploaders2')
     ],[
-        InlineKeyboardButton('Channel✅️', url='https://t.me/joinchat/Rj8lxYv8Cro1ODc1')
+        InlineKeyboardButton('Channel✅️', url='https://t.me/newmovies153')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
