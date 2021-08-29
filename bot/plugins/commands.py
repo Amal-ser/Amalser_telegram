@@ -22,18 +22,7 @@ async def start(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text="<b>♦️ READ THIS INSTRUCTION ♦️</b>",
-
-"🗣 MOVIEUPLOADERS ചോദിക്കുന്ന സിനിമകൾ നിങ്ങൾക്ക് ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ താഴെ കൊടുത്തിട്ടുള്ള ചാനലിൽ ജോയിൻ ചെയ്യണം. ജോയിൻ ചെയ്ത ശേഷം വീണ്ടും ഗ്രൂപ്പിൽ പോയി ആ ബട്ടനിൽ അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സിനിമ പ്രൈവറ്റ് ആയി അയച്ചു തരുന്നതാണ്..😍"
-
-"🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈"
-
-"👇 JOIN THIS CHANNEL & TRY 👇"
-
-"[https://t.me/newmovies153]"
-"[https://t.me/newmovies153]"
-
-"☝️ ഈ ചാനലിൽ ജോയിൻ ചെയ്‌ത് വീണ്ടും ട്രൈ ചെയ്യൂ ☝️</a></b>",
+                text="<b>♦️ READ THIS INSTRUCTION ♦️ 🗣 MOVIEUPLOADERS ചോദിക്കുന്ന സിനിമകൾ നിങ്ങൾക്ക് ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ താഴെ കൊടുത്തിട്ടുള്ള ചാനലിൽ ജോയിൻ ചെയ്യണം. ജോയിൻ ചെയ്ത ശേഷം വീണ്ടും ഗ്രൂപ്പിൽ പോയി ആ ബട്ടനിൽ അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സിനിമ പ്രൈവറ്റ് ആയി അയച്ചു തരുന്നതാണ്..😍 🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈 👇 JOIN THIS CHANNEL & TRY 👇[https://t.me/newmovies153][https://t.me/newmovies153]☝️ ഈ ചാനലിൽ ജോയിൻ ചെയ്‌ത് വീണ്ടും ട്രൈ ചെയ്യൂ ☝️</a></b>",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/newmovies153")]
               ])
