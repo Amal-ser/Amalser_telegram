@@ -28,5 +28,5 @@ class Translation(object):
 
 <b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
 
-<b>➥ Source Code</b> : <i><a href="https://t.me/@Malayalam_rocker_s">Click Me</a></i>
+<b>➥ Source Code</b> : <i><a href="https://t.me/@malayalam_rocker_s">Click Me</a></i>
 """
