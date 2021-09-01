@@ -10,9 +10,9 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+@Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def start(bot, update): 
-    update_channel = "@newmovies153"
+    update_channel = "@malayalam_rockers_off"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
