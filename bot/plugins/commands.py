@@ -11,7 +11,7 @@ from bot.database import Database # pylint: disable=import-error
 db = Database()
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
-async def start(bot, update): 
+async def help(bot, update): 
     update_channel = "@malayalam_rockers_off"
     if update_channel:
         try:
@@ -131,7 +131,7 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
+        InlineKeyboardButton('Home ⚡', callback_data='help'),
         InlineKeyboardButton('About 🚩', callback_data='about')
     ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
@@ -152,7 +152,7 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
+        InlineKeyboardButton('Home ⚡', callback_data='help'),
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
