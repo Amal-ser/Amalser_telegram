@@ -113,7 +113,7 @@ async def start(bot, update):
     ],[
         InlineKeyboardButton('Channel✅️', url='https://t.me/malayalam_rockers_off')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data="start")
+        InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
