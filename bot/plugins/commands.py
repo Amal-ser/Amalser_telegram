@@ -10,8 +10,8 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-@Client.on_message(filters.command(["help"]) & filters.private, group=1)
-async def help(bot, update): 
+@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+async def start(bot, update): 
     update_channel = "@malayalam_rockers_off"
     if update_channel:
         try:
@@ -113,7 +113,7 @@ async def help(bot, update):
     ],[
         InlineKeyboardButton('Channel✅️', url='https://t.me/malayalam_rockers_off')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('Start ⚙', callback_data="start")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -128,10 +128,10 @@ async def help(bot, update):
     )
 
 
-@Client.on_message(filters.command(["help"]) & filters.private, group=1)
-async def help(bot, update):
+@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+async def start(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='help'),
+        InlineKeyboardButton('Home ⚡', callback_data='start'),
         InlineKeyboardButton('About 🚩', callback_data='about')
     ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
@@ -141,7 +141,7 @@ async def help(bot, update):
     
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.HELP_TEXT,
+        text=Translation.START_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=update.message_id
@@ -152,7 +152,7 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='help'),
+        InlineKeyboardButton('Home ⚡', callback_data='start'),
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
