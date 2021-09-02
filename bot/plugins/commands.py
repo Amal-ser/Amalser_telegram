@@ -134,7 +134,7 @@ async def help(bot, update):
         InlineKeyboardButton('Owner ✅️', url='https://t.me/amal_aj'),
         InlineKeyboardButton('Group ✅️', url ='https://t.me/malayalam_rocker_s')
     ],[
-        InlineKeyboardButton('Channel ✅️', url='https://t.me/malayalam_rockers_off', ')
+        InlineKeyboardButton('Channel ✅️', url='https://t.me/malayalam_rockers_off')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
