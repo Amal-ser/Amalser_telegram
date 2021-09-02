@@ -33,7 +33,7 @@ class Bot(Client):
         self.LOGGER(__name__).info(
             f"@{bot_details.username}  started! "
         )
-        self.USER, self.USER_ID = await User().help()
+        self.USER, self.USER_ID = await User().start()
 
     async def stop(self, *args):
         await super().stop()
