@@ -120,7 +120,7 @@ async def start(bot, update):
     
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
+        text=Translation.HELP_TEXT.format(
                 update.from_user.first_name),
         reply_markup=reply_markup,
         parse_mode="html",
@@ -128,8 +128,8 @@ async def start(bot, update):
     )
 
 
-@Client.on_message(filters.command(["help"]) & filters.private, group=1)
-async def help(bot, update):
+@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+async def start(bot, update):
     buttons = [[
         InlineKeyboardButton('Owner ✅️', url='https://t.me/amal_aj'),
         InlineKeyboardButton('Group ✅️', url ='https://t.me/malayalam_rocker_s')
