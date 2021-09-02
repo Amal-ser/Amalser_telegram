@@ -27,7 +27,7 @@ class Bot(Client):
         self.LOGGER = LOGGER
 
     async def start(self):
-        await super().help()
+        await super().start()
         bot_details = await self.get_me()
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
