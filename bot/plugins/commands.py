@@ -128,7 +128,7 @@ async def start(bot, update):
     )
 
 
-@Client.on_message(filters.command(["Help"]) & filters.private, group=1)
+@Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
