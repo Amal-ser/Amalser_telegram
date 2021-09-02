@@ -18,8 +18,8 @@ class User(Client):
         )
         self.LOGGER = LOGGER
 
-    async def help(self):
-        await super().help()
+    async def start(self):
+        await super().start()
         usr_bot_me = await self.get_me()
         return (self, usr_bot_me.id)
 
