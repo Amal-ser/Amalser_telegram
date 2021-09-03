@@ -47,10 +47,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/sabotschannel'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/sunaif-adkar2/auto-filter-bot-premier')
+        InlineKeyboardButton('BOT LINK ✅️', url='https://youtu.be/RlSG4ZgPls0'),
+        InlineKeyboardButton('CHANNEL 💌', url ='https://t.me/malayalam_rockers_off')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/sabotschannel')
+        InlineKeyboardButton('Group 💘', url='https://t.me/malayalam_rocker_s')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
