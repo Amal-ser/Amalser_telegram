@@ -5,17 +5,19 @@
 class Translation(object):
     
     START_TEXT = """<b>Hey {}!!</b>
-<b>ഞാനൊരു അമാനുഷികനായ ബോട്ടാണ് ഞാൻ @malayalam_rocker_s ഗ്രൂപ്പിലേക്ക് സിനിമ എല്ലാം കൊടുക്കുന്നത് ഞാനാണ്😁</b>
+<b>I am bot created for @malayalam_rocker_s You all Welcome first😁</b>
 
 
-<b>ഇവിടെ ഇരുന്ന്  help കുത്തി കളിക്കാതെ സ്ഥലം  വിട്ടോ😂oke bye😅</b>
+<b>First you Subcribe my Channel Then give start onces more then you will get files</b>
+
+<b> Youtube link 👉 : https://youtu.be/RlSG4ZgPls0</b>
 
 
 🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <b><i><a href="https://t.me/amal_aj">Amalser</a></i></b>
 </i>"""    
     
     HELP_TEXT = """
-<b>നോക്കിയിരുന്നോ ഇപ്പൊ ഹെൽപ്പ് ചെയ്യും😁</b>
+<b>Subcribe youtube channel first😁</b>
             
  @malayalam_rocker_s
 """
