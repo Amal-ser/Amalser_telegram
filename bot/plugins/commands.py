@@ -23,12 +23,12 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("https://t.me/malayalam_rockers_off" or None) else ("<code>" + file_name + "</code>")
+        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
         try:
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
+                caption = f"{file_name} \n @malayalam_rockers_off",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
