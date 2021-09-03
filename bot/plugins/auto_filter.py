@@ -126,8 +126,8 @@ async def auto_filter(bot, update):
                 file_link = f"https://t.me/{bot_.username}?start={unique_id}"
             
             results.append([
-            InlineKeyboardButton( " 📂 " + file_names, url=file_link),
-            InlineKeyboardButton(" 📥 " + f_size, url=file_link)
+            InlineKeyboardButton( " 💌 " + file_names, url=file_link),
+            InlineKeyboardButton(" ✅️ " + f_size, url=file_link)
         ])
         
     else:
@@ -164,7 +164,7 @@ async def auto_filter(bot, update):
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"💌 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
         ])
         
         result[0].append([ InlineKeyboardButton(f"🔎HOW TO SEARCH MOVIES🔍", url="https://t.me/malayalam_rocker_s") ])       
@@ -214,7 +214,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"""<i><b> ʜᴇʀᴇ ɪꜱ ᴛʜᴇ {(len_results)} ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy:</i></b> <b>{query}</b>\n\n 👉 <b>ഈ ചാനലിൽ</b> <b><i><a href="https://t.me/malayalam_rockers_off">⚔️ malayalam_rockers ⚔️</a></i></b> <b>ജോയിൻ ചെയ്ത ശേഷം ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</b>""",
+                text=f"""<i><b> ʜᴇʀᴇ ɪꜱ ᴛʜᴇ {(len_results)} ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy:</i></b> <b>{query}</b>\n\n 👉 <b>ഈ ചാനലിൽ</b> <b><i><a href="@malayalam_rockers_off">💌 malayalam_rockers 💌</a></i></b> <b>ജോയിൻ ചെയ്ത ശേഷം ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</b>""",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
