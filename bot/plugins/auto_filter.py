@@ -76,11 +76,11 @@ async def auto_filter(bot, update):
             if file_size < 1024:
                 file_size = f"[{file_size} B]"
             elif file_size < (1024**2):
-                file_size = f"[{str(round(file_size/1024, 2))} KiB] "
+                file_size = f"[{str(round(file_size/1024, 2))} KB] "
             elif file_size < (1024**3):
-                file_size = f"[{str(round(file_size/(1024**2), 2))} MiB] "
+                file_size = f"[{str(round(file_size/(1024**2), 2))} MB] "
             elif file_size < (1024**4):
-                file_size = f"[{str(round(file_size/(1024**3), 2))} GiB] "
+                file_size = f"[{str(round(file_size/(1024**3), 2))} GB] "
             
             
             file_size = "" if file_size == ("[0 B]") else file_size
@@ -126,8 +126,8 @@ async def auto_filter(bot, update):
                 file_link = f"https://t.me/{bot_.username}?start={unique_id}"
             
             results.append([
-            InlineKeyboardButton( " 📂 " + file_names, url=file_link),
-            InlineKeyboardButton(" 📩 " + f_size, url=file_link)
+            InlineKeyboardButton( " 🌀 " + file_names, url=file_link),
+            InlineKeyboardButton(" ✅️ " + f_size, url=file_link)
         ])
         
     else:
@@ -214,7 +214,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"""<i><b> ʜᴇʀᴇ ɪꜱ ᴛʜᴇ {(len_results)} ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy:</i></b> <b>{query}</b>\n\n 👉 <b>ഈ ചാനലിൽ</b> <b><i><a href="https://t.me/malayalam_rockers_off">💌 malayalam_rockers 💌</a></i></b> <b>ജോയിൻ ചെയ്ത ശേഷം ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</b>""",
+                text=f"""<i><b> ʜᴇʀᴇ ɪꜱ ᴛʜᴇ {(len_results)} ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy:</i></b> <b>{query}</b>\n\n 👉 <b>ഈ ചാനലിൽ</b> <b><i><a href="@malayalam_rockers_off">💌 @malayalam_rockers_off 💌</a></i></b> <b>ജോയിൻ ചെയ്ത ശേഷം ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</b>""",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
