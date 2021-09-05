@@ -1608,7 +1608,7 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/AlbertEinstein_TG"
+                    "My Dev ⚡", url="https://t.me/sunaif_adkar"
                 ),
                 
             InlineKeyboardButton
@@ -1639,8 +1639,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/malayalam_rocker_s'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://t.me/malayalam_rocker_s')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/sunaif_adkar'),
+            InlineKeyboardButton('Source Code 🧾', url ='https://t.me/sabotschannel/12')
         ],[
             InlineKeyboardButton('Support 🛠', callback_data="help"),
             InlineKeyboardButton('Help ⚙', callback_data="help")
@@ -1706,3 +1706,5 @@ def time_formatter(seconds: float) -> str:
         ((str(minutes) + "m, ") if minutes else "") + \
         ((str(seconds) + "s") if seconds else "")
     return tmp
+
+
