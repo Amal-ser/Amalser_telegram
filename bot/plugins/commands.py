@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @sunaif_adkar
+# (c) @Amal-ser
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -47,7 +47,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('BOT LINK ✅️', url='https://youtu.be/RlSG4ZgPls0'),
+        InlineKeyboardButton('BOT LINK ✅️', url='https://youtu.be/5MKycJxmA4c'),
         InlineKeyboardButton('CHANNEL 💌', url ='https://t.me/malayalam_rockers_off')
     ],[
         InlineKeyboardButton('Group 💘', url='https://t.me/malayalam_rocker_s')
