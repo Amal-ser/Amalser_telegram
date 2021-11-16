@@ -25,5 +25,5 @@ class Translation(object):
 
 <b>➥ join Group </b> : <i><a href="https://t.me/malayalam_rocker_s">malayalam_rockers</a></i>
 
-<b>➥ Source Code</b> : <b><a href="https://t.me/sabotschannel/12">CLICK HERE ⛱</a></b>
+<b>➥ Source Code</b> : <b><a href="https://t.me/malayalam_rocker">CLICK HERE ⛱</a></b>
 """
